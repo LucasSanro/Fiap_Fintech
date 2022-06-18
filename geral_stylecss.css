@@ -1,0 +1,12 @@
+:root{
+
+  --ff-primary-text:'Open Sans', sans-serif;
+  --ff-screen-text:'Comfortaa', cursive;
+  --ff-butons:'Roboto', sans-serif;
+
+  --bt-color-blue:#040FD9;
+  --bt-color-white:#ffff;
+
+  --fs-bt:1.5rem;
+
+}

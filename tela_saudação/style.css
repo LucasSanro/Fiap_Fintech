@@ -1,0 +1,91 @@
+/* fonts
+font-family: 'Comfortaa', cursive;
+font-family: 'Open Sans', sans-serif; */
+
+@import url(/Fiap/projeto_fintec/Fiap_Fintech/geral_stylecss.css);
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+
+  font-size: 62.5%;
+
+}
+
+body{
+
+  width: auto;
+  height: 100vh;
+
+  background-image:linear-gradient(0deg, rgba(1, 7, 102, 0.6), rgba(1, 7, 102, 0.6)), url(/Fiap/projeto_fintec/Fiap_Fintech/images/low-angle-view-of-skyscrapers.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: 0 0, center;
+
+}
+
+main{
+
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+h1{
+  
+  font-family: var(--ff-primary-text);
+  color: #ffff;
+  font-size: 4.8rem;
+  line-height: 6.5rem;
+
+}
+
+footer{
+
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+
+  padding-bottom: 1rem;
+}
+
+.button{
+
+  font-family: var(--ff-butons);
+
+  width: 16.7rem;
+  height: 5.2rem;
+ 
+  border-radius: 8px;
+  border-style: none;
+}
+
+#login{
+  
+  line-height: 1.5rem;
+  font-size: var(--fs-bt);
+  font-weight: 700;
+  color: hsl(237, 96%, 43%);
+
+  background: #ffff;
+
+}
+
+#register{
+
+  line-height: 1.5rem;
+  font-size: var(--fs-bt);
+  font-weight: 700;
+  color: #ffff;
+
+  background-color: var(--bt-color-blue);
+
+}

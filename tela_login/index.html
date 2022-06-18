@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
+  <link rel="stylesheet" href="style.css">
+  <title>MoneySaver</title>
+</head>
+<body>
+  <header>
+    <div id="backButton">
+      <svg width="30" height="28" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M2.2576 6.90907L7.07057 11.4547L6.38395 12.1817L0.656679 6.77258L0.27179 6.40907L0.656679 6.04556L6.38395 0.636475L7.07057 1.36349L2.2576 5.90907L9.18181 5.90907C14.8306 5.90907 19.5 10.2791 19.5 15.6818L19.5 18H18.5L18.5 15.6818C18.5 10.8845 14.333 6.90907 9.18181 6.90907L2.2576 6.90907Z" fill="white" fill-opacity="0.8"/>
+      </svg>
+    </div>
+  </header>
+
+  <main>
+    <h1>Entrar</h1>
+    <form action="get">
+      <fieldset>
+          <div class="userEmail">
+            <div class="input-whapper">
+              <label for="email"></label>
+              <input type="email" id="email" />
+            </div>
+            <div class="userPassword">
+              <div class="input-whapper">
+                <label for="password"></label>
+                <input type="password" id="password" />
+              </div>
+              <div class="checkboxPassword">
+                <div class="input-checkBox">
+                  <input type="checkbox" id="passwordSave" />
+                  <label for="checkboxPassword">Salvar Senha</label>
+                </div>
+      </fieldset>
+
+    </form>
+    <div class="submitButton" >
+      <input form="form" type="submit" value="Entrar" />
+    </div>
+    <a href="#">Esqueci minha Senha</a>
+    <h2>ou</h2>
+    <div class="loginOptions">
+
+      <div id="goolgeIcon">
+       <a href="#"><img src="/Fiap/projeto_fintec/Fiap_Fintech/images/google.svg" alt="icone do google para login"></a>
+      </div>
+
+      <div id="microsoftIcon">
+        <a href="#"><img src="/Fiap/projeto_fintec/Fiap_Fintech/images/microsoft.svg" alt="icone da microsoft para login"></a>
+      </div>
+
+      <div id="facebookIcon">
+        <a href="#"><img src="/Fiap/projeto_fintec/Fiap_Fintech/images/facebook.svg" alt="icone do facebook para login">
+        </a>
+
+      </div>
+    </div>
+  </main>
+  
+</body>
+</html>
