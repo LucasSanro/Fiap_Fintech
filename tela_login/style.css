@@ -31,16 +31,18 @@ fieldset{
 }
 
 #backButton{
-  margin: 1.6rem;
+  padding:1rem 0 1rem 1.5rem;
 }
 
 main{
 
   color: #ffff;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items:center;
+  
 
 }
 
@@ -50,7 +52,9 @@ main h1{
   color: #ffff;
   font-size: 3.6rem;
   line-height: 4rem;
+  font-weight: 100;
 
+  margin-top: 9rem;
   margin-bottom: 3rem;
   letter-spacing: 1.5%;
 
@@ -69,7 +73,6 @@ main h1{
   border-radius: 8px;
 
   height: 5.2rem;
-
   width: 34.3rem;
 
   font-size: 16px;
@@ -83,6 +86,52 @@ main h1{
   background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M17.3 3.3C16.9 2.9 16.2 2.9 15.7 3.3L13.3 5.7C12.2437 5.3079 11.1267 5.1048 10 5.1C6.2 5.2 2.8 7.2 1 10.5C1.2 10.9 1.5 11.3 1.8 11.7C2.6 12.8 3.6 13.7 4.7 14.4L3 16.1C2.6 16.5 2.5 17.2 3 17.7C3.4 18.1 4.1 18.2 4.6 17.7L17.3 4.9C17.7 4.4 17.7 3.7 17.3 3.3V3.3ZM6.7 12.3L5.4 13.6C4.2 12.9 3.1 11.9 2.3 10.7C3.5 9 5.1 7.8 7 7.2C5.7 8.6 5.6 10.8 6.7 12.3V12.3ZM10.1 9C9.6 8.5 9.7 7.7 10.2 7.2C10.7 6.8 11.4 6.8 11.9 7.2L10.1 9ZM18.3 9.5C17.8 8.8 17.2 8.1 16.5 7.6L15.5 8.6C16.3 9.2 17 9.9 17.6 10.8C15.9 13.4 13 15 9.9 15H9.1L8.1 16C8.8 15.9 9.4 16 10 16C13.3 16 16.4 14.4 18.3 11.7C18.6 11.3 18.8 10.9 19.1 10.5C18.8 10.2 18.6 9.8 18.3 9.5V9.5ZM14 10L10 14C12.2 14 14 12.2 14 10Z' fill='black'/%3E%3C/svg%3E%0A");
   background-repeat: no-repeat;
   background-position: right 20px top 50%;
+}
+
+.input-checkBox label{
+  font-family: var(--ff-screen-text);
+  font-size: 1.5rem;
+  font-weight: 100;
+
+  margin-top: 1.6rem;
+  margin-bottom: 4rem;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  
+  
+}
+
+.input-checkBox{
+ position: relative;
+ left: 0;
+ top: 0;
+}
+
+.input-checkBox input{
+  position: absolute;
+  width: 2.4rem;
+  height: 2.4rem;
+
+  opacity: 0;
+}
+.input-checkBox label::before{
+
+  content:"";
+  width: 1.6rem;
+  height: 1.6rem;
+  display: block;
+  border: 1px solid #E6E6F0;
+
+  border-radius: 8px;
+  
+}
+.input-checkBox input:checked + label::before{
+  background-image: url("data:image/svg+xml,%3Csvg width='10' height='9' viewBox='0 0 18 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6 11.17L1.83 7L0.410004 8.41L6 14L18 2L16.59 0.589996L6 11.17Z' fill='%2342D3FF'/%3E%3C/svg%3E ");
+  background-repeat: no-repeat;
+  background-position: center;
+  
 }
 .submitButton input{
   font-family: var(--ff-butons);
@@ -101,15 +150,25 @@ main h1{
   background-color: var(--bt-color-blue);
 }
 
+#passwordsave {
+  margin: 1.5rem 20rem 0 0;
+}
+
+#passwordsave a{
+  font-family: var(--ff-screen-text);
+  color: #ffff;
+
+  font-size: 1.5rem;
+  line-height: 1rem;
+}
 h2{
   font-family: var(--ff-screen-text);
   color: #ffff;
   font-size: 2rem;
   line-height: 2rem;
+  font-weight: 100;
 
   margin: 1.5rem 0 1.5rem 0;
-
-  
 }
 
 .loginOptions{
@@ -120,4 +179,11 @@ h2{
 
   display: flex;
   gap: 1rem;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
 }
